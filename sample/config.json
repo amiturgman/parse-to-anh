@@ -1,0 +1,9 @@
+{
+  "mongoUrl": "yourMongoUrl",
+  "hubName": "yourAzureHubName",
+  "hubConnection": "yourAzureHubConnectionString",
+  "tags": [],
+  "reRegister": true,
+  "batchSize": 100,
+  "limit": 0
+}

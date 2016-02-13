@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+var path = require('path');
+var migrator = require('parse-to-anh');
+var configPath = process.argv[2];
+if (!configPath) return console.error('please provide the path to the config file');
+
+configPath = path.join(process.cwd(), configPath);
+var config = require(configPath);
+
+console.log('starting migration to Azure Notification Hubs...');
+
+migrator.start(config, function (err) {
+  if (err) return console.error('error occurred:', err);
+  console.log('migration completed successfully');
+});
