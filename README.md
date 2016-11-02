@@ -1,6 +1,6 @@
 # parse-to-anh
 Node.js module and tool to migrate android and ios users from parse to Azure Notification Hubs.
-The script updates the `_Installation` collection with a new property `anhRegistrationId` that can later be used to send puah notifications for the user.
+The script updates the `_Installation` collection with a new property `anhRegistrationId` that can later be used to send push notifications for the user.
 
 Sending a notification to a user is done by sending a notification to a tag of the user's `anhRegistrationId`. Example below.
 
